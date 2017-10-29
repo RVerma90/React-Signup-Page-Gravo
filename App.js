@@ -1,6 +1,8 @@
 import React from 'react';
 import { StyleSheet, Text, View, TextInput, Image } from 'react-native';
 
+import LoginForm from './App/Components/LogInForm';
+
 export default class App extends React.Component {
   render() {
     return (
@@ -8,6 +10,8 @@ export default class App extends React.Component {
           <View style={styles.logoContainer}>
             <Image source={require('./App/Images/logo_small.png')} style={styles.logo} />
           </View>
+
+          <LoginForm />
       </Image>
     );
   }
